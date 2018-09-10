@@ -4,11 +4,18 @@
     <div [ngSwitch]="question.controlType">
   
       <input *ngSwitchCase="'textbox'" [formControlName]="question.key"
-              [id]="question.key" [type]="question.type">
-  
+              [id]="question.key" [type]="question.controlType">
+            
+      <input *ngSwitchCase="'radio'" [formControlName]="question.key"
+              [id]="question.key" [type]="question.controlType" >
+      
+       <input *ngSwitchCase="'checkbox'" [formControlName]="question.key"
+              [id]="question.key" [type]="question.controlType" >
+
       <select [id]="question.key" *ngSwitchCase="'dropdown'" [formControlName]="question.key">
         <option *ngFor="let opt of question.options" [value]="opt.key">{{opt.value}}</option>
       </select>
+
       
   
     </div> 

@@ -7,7 +7,7 @@ import { QuestionService } from './question.service';
   selector: 'app-root',
   template: `
     <div>
-      <h2>Job Application for Heroes</h2>
+      <h2>MockUp Forms</h2>
       <app-dynamic-form [questions]="questions"></app-dynamic-form>
     </div>
   `,

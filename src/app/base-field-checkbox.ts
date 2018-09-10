@@ -1,7 +1,7 @@
 import { BaseFields } from './base_field';
 
-export class RadioQuestion extends BaseFields<string> {
-  controlType = 'radio';
+export class CheckQuestion extends BaseFields<string> {
+  controlType = 'checkbox';
   type:string;
  value:string;
 
